@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+       <title>Forms</title>
+</head>
+
+<body>
+            
+    <table align="center" border="1">
+        <tr>
+            <td><h1>Create an account</h1></td>
+        </tr>
+        <tr>
+            <td>
+                <form action="Thank you.html">
+                <label>
+                    What is your name?
+                    <input type="text" required>
+                </label>
+
+                <br>
+               
+                <fieldset disabled> <!-- tag-ul fieldset permite dezactivarea anumitor cimpuri din forms-->
+                <label>
+                    What is your phone number?
+                    <input type="number" maxlength="7">
+                </label>
+                </fieldset>
+                <br>
+                
+                <label>
+                    What is your birthday?
+                    <input type="date">
+                </label>
+
+                <br>
+
+                    <label>Gender
+                    <input type="radio" name="g">F <br>
+                    <input type="radio" name="g">M <br>
+                    <input type="radio" name="g">O <br>
+                </label>
+                <br>
+                <label>
+                    Email
+                    <input type="email">
+                </label>
+                <br>
+
+                <label> Whats your country?
+                <input list="tara"  >
+                    <datalist id="tara"> <!-- datalist permite atribuirea unei liste pentru comanda input, astfel incit sa se poata alege o varianta dintre cele mentionate-->
+                        <option value="Moldova">
+                        <option value="Romania">
+                        <option value="Rusia">
+                        <option value="Ucraina">
+                        <option value="Ungaria">
+                    </datalist>
+                </label>
+                              
+                <br>
+
+                <label>
+                    Education lavels?
+                    <br>
+                    <input type="checkbox">Primary school
+                    <br>
+                    <input type="checkbox">College
+                    <br>
+                    <input type="checkbox">University 
+                    <br>
+                </label>
+                
+                <label>
+                    Write about yourself?
+                    <small>(max 500 characters)</small>
+                    <br>
+                    <textarea ></textarea>
+                </label>
+                <br>
+                       
+        
+           
+                <label for="Etnie">Etnie
+                    <select name="etnie" id="etnie1">
+                    
+                        <optgroup label="Ortodox"> <!-- optgroup permite a grupa optiunile pe categorii, afis]nd utilizatorului ce anume contin acestea-->
+                                <option value="crestin1">crestin1</option>
+                                <option value="crestin2">crestin2</option>
+                                <option value="crestin3">crestin3</option>
+                        </optgroup>
+
+                        <optgroup label="Catolic">
+                            <option value="catolic1">catolic1</option>
+                            <option value="catolic2">catolic2</option>
+                            <option value="catolic3">catolic3</option>
+                        </optgroup>
+                        
+                    </select>
+                    <br>
+                    <br>
+                    
+                    <label>
+                        <input type="checkbox">
+                        I agree with <a href="Privacy and policy.html" target="_blank">terms and conditions</a>
+                       <br>
+                       
+                    </label>
+                
+                <hr>
+                <button>SEND</button>
+                <br>
+                <br>
+            </label>
+            </form>
+           
+           
+            </td>        
+        </tr>
+      
+               
+    </table>
+
+
+</body>
+</html>
